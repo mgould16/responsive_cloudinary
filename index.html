@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <p>Two pictures</p>
+
+    <script src="https://cloudinary.com/javascripts/g/cloudinary_public.js?1545645331" type="text/javascript"></script>
+
+    <div>
+
+<!--       <img
+          data-src="https://res.cloudinary.com/demo/image/upload/w_auto,c_scale/smiling_man.jpg"
+          class="cld-responsive">
+ -->
+          <img
+              data-src="https://res.cloudinary.com/markg16/image/upload/w_auto,c_scale/v1561371031/munch_2.jpg"
+              class="cld-responsive">
+
+          <img
+              data-src="https://res.cloudinary.com/markg16/image/upload/w_auto,c_scale/v1561371031/munch_1.jpg"
+              class="cld-responsive">
+
+    </div>
+
+    <script type="text/javascript">
+        var cl = cloudinary.Cloudinary.new({cloud_name: "markg16"});
+        // replace 'demo' with your cloud name in the line above
+        cl.responsive();
+    </script>
+
+  </body>
+</html>
