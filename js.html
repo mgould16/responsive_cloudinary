@@ -6,8 +6,13 @@
   </head>
   <body>
     <p>Responsive Images w/ Cloudinary JS</p>
+<!--
+    <script src="https://cloudinary.com/javascripts/g/cloudinary_public.js?1545645331" type="text/javascript"></script> -->
 
-    <script src="https://cloudinary.com/javascripts/g/cloudinary_public.js?1545645331" type="text/javascript"></script>
+    <script
+        src="https://unpkg.com/cloudinary-core@2.6.3/cloudinary-core-shrinkwrap.min.js"
+        type="text/javascript">
+    </script>
 
     <div>
 
@@ -26,7 +31,7 @@
     </div>
 
     <script type="text/javascript">
-        var cl = cloudinary.Cloudinary.new({cloud_name: "demo"});
+        var cl = cloudinary.Cloudinary.new({cloud_name: "markg16"});
         // replace 'demo' with your cloud name in the line above
         cl.responsive();
     </script>
